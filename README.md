@@ -62,3 +62,62 @@ The focus is on clarity, quick access, and a creator-friendly workflow.
 G.Assets was built to demonstrate how a core asset-management tool for creators and game developers can function.  
 It highlights structured storage, easy publishing, organized browsing, and an interface that fits neatly into a production workflow.  
 The project shows how a simple asset hub can support creativity and speed up development.
+
+---
+
+## Required Installations
+
+### **System Level**
+- NodeJS  
+- npm  
+- MongoDB Community Server  
+
+### **Frontend Packages**
+- Vite  
+- React  
+- React Router DOM  
+- Axios  
+- TailwindCSS  
+- PostCSS  
+- Autoprefixer  
+
+### **Backend Packages**
+- Mongoose  
+- Multer  
+- jsonwebtoken  
+- bcryptjs  
+- cors  
+
+---
+
+## Installation Commands
+
+### **System**
+```sh
+sudo apt update
+sudo apt install -y mongodb
+sudo apt install -y nodejs npm
+```
+
+### **Frontend**
+```sh
+npm create vite@latest
+cd client
+npm install
+npm install react-router-dom axios
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+### **Backend**
+```sh
+cd server
+npm init -y
+npm install mongoose multer jsonwebtoken bcryptjs cors
+```
+
+### **MongoDB Service**
+```sh
+sudo systemctl start mongodb
+sudo systemctl enable mongodb
+```
