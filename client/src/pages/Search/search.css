@@ -1,0 +1,320 @@
+.search-root {
+  padding-top: 0.5rem;
+}
+
+/* TITLE */
+
+.search-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* SEARCH BAR WRAPPER – GLASS + BORDER */
+
+.search-bar-box {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 16px;
+  border: 1px solid #2a2a40;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* SEARCH INPUT – SLIGHT GLASS */
+
+.search-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(5, 5, 16, 0.9);
+  color: #ffffff;
+  font-size: 0.95rem;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* FILTER BOX – GLASS + BORDER */
+
+.filter-box {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 16px;
+  border: 1px solid #2a2a40;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.filter-title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.filter-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* FILTER SELECTS – LIGHT GLASS + BORDER */
+
+.filter-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.65rem 1rem;
+  padding-right: 2.2rem;
+  border-radius: 10px;
+  background: rgba(11, 12, 26, 0.95);
+  border: 1px solid rgba(45, 47, 69, 0.95);
+  color: #e5e7ff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  position: relative;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.filter-select:hover {
+  border-color: #4b4e7a;
+  background: rgba(17, 19, 39, 0.98);
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+.filter-select-wrapper {
+  position: relative;
+}
+
+.filter-select-wrapper::after {
+  content: "▾";
+  font-size: 0.8rem;
+  color: #aab0ff;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* META TEXT */
+
+.asset-count {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #bbbbd5;
+}
+
+/* GRID */
+
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* ---------------------------------------------------------- */
+/* CARD OUTER WRAPPER – GLASS + BORDER + HOVER GRADIENT       */
+/* ---------------------------------------------------------- */
+
+.search-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgba(5, 8, 22, 0.8);
+  border-radius: 12px;
+  border: 1px solid #1d1d30;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 14px 32px rgba(15, 23, 42, 0.9),
+    0 0 0 1px rgba(15, 23, 42, 0.5);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+/* gradient overlay for hover */
+.search-card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 0 0, rgba(129, 140, 248, 0.7), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.55), transparent 55%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+}
+
+/* hover state: slight lift + gradient appears */
+.search-card:hover {
+  transform: translateY(-4px);
+  border-color: #4f46e5;
+  background: rgba(5, 8, 22, 0.95);
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.95),
+    0 0 0 1px rgba(30, 64, 175, 0.6);
+}
+
+.search-card:hover::before {
+  opacity: 0.5;
+}
+
+/* ---------------------------------------------------------- */
+/* IMAGE THUMBNAIL (CROPPED)                                  */
+/* ---------------------------------------------------------- */
+
+.search-card-thumb {
+  width: 100%;
+  height: 70px;
+  background: #0b1020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.search-card-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-card-thumb-placeholder {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+/* ---------------------------------------------------------- */
+/* BADGE                                                      */
+/* ---------------------------------------------------------- */
+
+.search-card-badge {
+  display: inline-block;
+  background: rgba(11, 11, 20, 0.95);
+  border: 1px solid #33335a;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin: 0.6rem 0 0.4rem 0.75rem;
+  color: #bcbcea;
+}
+
+/* ---------------------------------------------------------- */
+/* BODY CONTENT                                               */
+/* ---------------------------------------------------------- */
+
+.search-card-body {
+  padding: 0.2rem 0.75rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.search-card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.price-tag {
+  background: #ffffff;
+  color: #11111a;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.asset-title {
+  margin: 0.2rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Fixed-height description so card layout stays aligned */
+
+.asset-desc {
+  margin: 0;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #c0c0dd;
+  min-height: 40px;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+/* TAG ROW (SEPARATE, FIXED HEIGHT) */
+
+.tag-row {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  min-height: 35px;
+  max-height: 35px;
+  overflow: hidden;
+}
+
+.tag {
+  background: #1a1a30;
+  color: #d5d5ff;
+  border: 1px solid #3a3a55;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* DOWNLOAD BUTTON (BOTTOM ANCHORED) */
+
+.download-row {
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #4f46e5;
+  color: #ffffff;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.15s ease-in-out,
+    transform 0.05s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.6);
+}
+
+.download-btn:hover {
+  background: #4338ca;
+}
+
+.download-btn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
