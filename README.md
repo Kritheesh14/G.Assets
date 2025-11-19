@@ -1,59 +1,64 @@
-# G.Assets – Digital Asset Store
+# G.Assets – Asset Hub for Game Developers and Creators
 
-G.Assets is a simple and clean web application where users can upload, browse, and manage digital assets.  
-It brings together different types of assets into one organized platform, with an easy-to-use interface inspired by the original Figma design.
-
----
-
-## Summary
-
-The application lets users create an account, publish their own assets, explore assets posted by others, and maintain a personal library.  
-It focuses on clarity, simplicity, and a smooth workflow.  
-G.Assets shows how a modern web app can handle user accounts, uploads, search features, and organized browsing in one place.
+G.Assets is a streamlined web application designed to help creators and game developers store, manage, and access digital assets in one place.  
+It provides a clean interface for uploading your work, browsing community assets, and organizing everything neatly for development use.
 
 ---
 
-## Key Features
+## Overview
 
-### **User Accounts**
-- Sign up and log in with your details  
-- Access personal pages only after logging in  
-- Stay logged in while navigating the app  
-
-### **Publish Assets**
-- Add new assets with a title, description, category, tags, and optional files  
-- Assets get stored with your user ID so they show in your personal section  
-- Tag system helps in grouping and better visibility  
-
-### **Browse & Search**
-- Search for assets using keywords  
-- Filter by category or tags  
-- Explore assets uploaded by others  
-
-### **My Library**
-- View all assets you have uploaded  
-- Helps maintain your personal collection in one place  
-
-### **Dashboard**
-- Quick summary of your uploads  
-- Simple overview of activity  
-
-### **Clean Layout**
-- Consistent design across all pages  
-- Simple navigation through Home, Search, Create Asset, Library, Dashboard, Profile  
+The platform functions as a lightweight asset library meant to simplify how developers and designers handle their files.  
+Instead of scattering assets across folders, drives, and links, G.Assets brings them into a unified and structured space.  
+The focus is on clarity, quick access, and a creator-friendly workflow.
 
 ---
 
-## How the Application Can Be Used
+## Core Features
 
-- A hub for students or creators to share templates, code files, designs, or documents  
-- A personal portfolio store where you maintain and showcase what you have built  
-- A simple internal library system for small teams or clubs  
-- A base structure that can later become a full asset marketplace  
+### **1. User Accounts**
+- Sign up and log in to access your personal workspace  
+- Your content stays linked to your profile  
+- Protected sections ensure only you can view and manage your own uploads  
+
+### **2. Upload Assets Easily**
+- Add assets with a title, category, tags, description, and optional file  
+- Ideal for game art, sprites, textures, audio files, scripts, documents, and more  
+- Tags help in classifying assets for game engines or workflows  
+
+### **3. Browse and Discover**
+- View all assets published by users  
+- Search using keywords  
+- Explore by category, engine type, or tags  
+- Helps teams and devs quickly locate the files they need  
+
+### **4. Your Personal Library**
+- Shows all the assets you’ve uploaded  
+- Works as your private asset catalog  
+- Helps manage project files without confusion  
+
+### **5. Dashboard Snapshot**
+- Simple overview of your activity  
+- Quick stats about your uploads  
+
+### **6. Clean and Consistent UI**
+- Layout designed following the Figma reference  
+- Focused on usability and fast navigation  
+- Pages structured for minimal clutter and easy presentation  
 
 ---
 
-## Project Aim
+## How Game Devs Can Use This
 
-G.Assets demonstrates how a functional asset-sharing platform can be built with modern web technologies.  
-It highlights clean UI planning, asset organization, user-focused navigation, and a straightforward publishing flow.
+- Store art assets, sprites, animations, sound effects, level design files, and prototype scripts  
+- Keep project resources organized across different development stages  
+- Share assets with teammates during collaborative development  
+- Maintain a personal asset bank you can reuse across multiple game projects  
+- Build a growing showcase of your creations for portfolio purposes  
+
+---
+
+## Purpose of the Project
+
+G.Assets was built to demonstrate how a core asset-management tool for creators and game developers can function.  
+It highlights structured storage, easy publishing, organized browsing, and an interface that fits neatly into a production workflow.  
+The project shows how a simple asset hub can support creativity and speed up development.
